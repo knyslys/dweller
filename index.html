@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <link rel="icon" type="image/x-icon" href="images/titleicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Dweller - Games deals in one place</title>
+  </head>
+  <body>
+    <header class="header">
+      <img src="images/logo.png" alt="dweller-logo" class="header__logo" />
+    </header>
+
+    <nav class="navigation">
+      <div class="nav-container">
+        <ul class="navigation__list">
+          <li class="navigation__list__item navigation__list__item--selected">
+            <div class="icon-container">
+              <img
+                src="images/icons8-steam-50.png"
+                alt="icon icon--steam"
+                class="navigation__list__item__icon"
+              />
+            </div>
+            <a class="nav-link nav-link--steam" href="#">Steam</a>
+          </li>
+          <li class="navigation__list__item">
+            <div class="icon-container">
+              <img
+                src="images/icons8-epic-games-50.png"
+                alt="icon icon--epic"
+                class="navigation__list__item__icon"
+              />
+            </div>
+            <a class="nav-link nav-link--humble" href="#">Humble</a>
+          </li>
+          <li class="navigation__list__item">
+            <div class="icon-container">
+              <img
+                src="images/icons8-gog-galaxy-50.png"
+                alt="icon icon--gog"
+                class="navigation__list__item__icon"
+              />
+            </div>
+            <a class="nav-link nav-link--gog" href="#">GOG Games</a>
+          </li>
+          <div class="indicator">
+            <div class="indicator__left"></div>
+          </div>
+          <!-- <div class="indicator"></div> -->
+        </ul>
+      </div>
+    </nav>
+
+    <section class="section-games">
+      <div class="container">
+        <div class="filter">
+          <span class="">Sort by:</span>
+          <form class="filters">
+            <input type="radio" id="rating" name="sorting" checked="true" />
+            <label class="rating-label" for="filter__box--rating"
+              >Rating(Best rated on top)</label
+            >
+            <input type="radio" id="price" name="sorting" />
+            <label for="filter__box--price">Price(Cheapest on top)</label>
+          </form>
+        </div>
+        <div class="games">
+          <!-- <div class="games__box">
+            <div class="games__box__image-container">
+              <img
+                src="https://cdn.cloudflare.steamstatic.com/steam/apps/420060/capsule_sm_120.jpg?t=1562676294"
+                alt="test"
+                class="img"
+              />
+            </div>
+
+            <div class="games__box__info">
+              <h2 class="game-name">The game</h2>
+              <div class="games__box__info__price">
+                <i class="ph-coins icon"></i>
+                <span class="game-price">Normal price: 30 e</span>
+              </div>
+              <div class="games__box__info__price">
+                <i class="ph-tag icon"></i>
+                <span class="game-price game-price--curent"
+                  >Current price: 13 e</span
+                >
+              </div>
+              <div class="games__box__info__price">
+                <i class="ph-star icon"></i>
+                <span class="game-price game-price--curent"
+                  >Metacritic rating:
+                  <span class="rating rating--green">95</span></span
+                >
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
